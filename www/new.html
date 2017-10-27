@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+ <body background ="img/FF.jpg">
+
+<img src="img/newcon.png" width="98%" height="20%"><br><br><br>
+
+<html>
+
+
+  <head lang="en">
+  <meta charset="UTF-8">
+  <script language="JavaScript">
+    function showInput() {
+        
+     window.localStorage.setItem('name',document.getElementById('name').value);
+        document.getElementById('name').value=null
+    window.localStorage.setItem('mobile',document.getElementById('mobile').value);
+    document.getElementById('mobile').value=null
+    window.localStorage.setItem('notes',document.getElementById('notes').value);
+    document.getElementById('notes').value=null
+     window.localStorage.setItem('nickname',document.getElementById('nickname').value);
+        document.getElementById('nickname').value=null
+         window.localStorage.setItem('birthday',document.getElementById('birthday').value);
+        document.getElementById('birthday').value=null
+
+
+    
+
+
+    }
+  </script>
+
+
+
+<form>
+<center><label><b><font size="6">Name</font></b></­label>
+&nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp&nbsp&nbsp&nbsp&nbsp
+<input type="text" width="55" name="message" id="name" placeholder="Enter a Name"> </center>
+
+<br>
+<center><label><b><font size="6">Mobile</font></­b></label>
+&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp
+<input type="text" name="message" id="mobile" placeholder="Enter a Phone Number">
+</form> </b> </label> </center>
+<br>
+<center> <label><b><font size="6">Notes</font></­b></label>
+&nbsp &nbsp&nbsp  &nbsp&nbsp&nbsp &nbsp&nbsp &nbsp &nbsp&nbsp&nbsp&nbsp<input type="text" name="message"  id="notes" placeholder="Enter a Notes"> </center> </b> </label>
+</form>
+
+<br>
+<center><label><b><font size="6">Nickname</font></­b></label>
+&nbsp &nbsp <input type="text" name="message"  id="nickname" placeholder="Nickname"> </b> </label> </center>
+</form>
+<br>
+
+<center><label><b><font size="6">Birthday</font></­b></label>
+&nbsp &nbsp &nbsp &nbsp<input type="text" name="message"  id="birthday" placeholder="Date"> </b> </label> </center>
+<br>
+
+&nbsp &nbsp &nbsp<center><input type="submit" value="Save" onclick="showInput();">
+
+ &nbsp &nbsp &nbsp &nbsp &nbsp<input type="submit" value="RESET" ;  onclick="window.open('new.html', '_self')"='#top ;"> </center >
+<br>
+<center><a href="LIST.HTML"><button style="margin-left: 5%; height: 45px; width: 100px; font-family: 'Calibri'; font-weight: bold; font-size: 20px">List</button></a> </center>
+
+
+
+
+
+</body> 
+ 
+</html>

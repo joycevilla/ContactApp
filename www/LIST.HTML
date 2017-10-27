@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body bgcolor="lightpink">
+		<center><h1><font style="font-size: 150px;">Contacts List</h1></font></center>
+	<hr style="background-color: black">	
+<input readonly="true" id="name" style="background-color: transparent; border-color: transparent; font-size: 80px;padding-left: 15px;padding-top:50px;font-family: 'Times New Roman'" ><br>
+<input readonly="true" id="mobile" style="background-color: transparent; border-color: transparent;font-size: 80px;padding-left: 15px;padding-top: 10px; font-family: 'Times New Roman'"><br>
+<input readonly="true" id="notes" style="background-color: transparent; border-color: transparent;font-size: 80px;padding-left: 15px;padding-top: 10px; font-family: 'Times New Roman'">
+<input readonly="true" id="nickname" style="background-color: transparent; border-color: transparent;font-size: 80px;padding-left: 15px;padding-top: 10px; font-family: 'Times New Roman'"><br>
+<input readonly="true" id="birthday" style="background-color: transparent; border-color: transparent;font-size: 80px;padding-left: 15px;padding-top: 10px; font-family: 'Times New Roman'">
+</body>
+<script>
+	document.getElementById('name').value = window.localStorage.getItem('name');
+	document.getElementById('mobile').value = window.localStorage.getItem('mobile');
+	document.getElementById('notes').value = window.localStorage.getItem('notes');
+	document.getElementById('nickname').value = window.localStorage.getItem('nickname');
+	document.getElementById('birthday').value = window.localStorage.getItem('birthday');
+</script>
+</html>
